@@ -59,6 +59,7 @@ height:50%;
     justify-content:space-between;
     flex-direction: row;
     flex-wrap:wrap;
+    height:150%;
     box-sizing: border-box;
     border:10px;
     margin-top:2%;
@@ -67,6 +68,25 @@ height:50%;
     flex: 1;
     grid-template-columns: 30% 70%;
 }
+.contentinline{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: row;
+    flex-wrap:wrap;
+    margin: 0px 0px 0px 5px;
+    grid-column: span 1 / span 2;
+    background-color: #F0E68C ;
+    float:left;
+}
+.aboutcontent{
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+    align-items:center;
+    margin: 0px 0px 0px 5px;
+    grid-column: span 1;
+    background-color: #FFDAB9;
+}
 .footerstyle{
     display: flex;
     justify-content:center;
@@ -74,6 +94,7 @@ height:50%;
     background: #DB7093;
     height:100px;
     bottom:0;
+    margin: 10px 0px 0px 0px;
 <!--    height:50px;-->
 <!--    flex-gap:2;-->
 <!--   margin:20px-->
@@ -83,6 +104,7 @@ height:50%;
     display: flex;
     justify-content:center;
     flex-direction: column;
+    flex:2;
 <!--    height:70%;-->
 
 }
@@ -123,30 +145,12 @@ height:50%;
 }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 550px) {
 .content {
     grid-template-columns: repeat(1,1fr);
 }
 }
 
-.contentinline{
-    display: flex;
-    justify-content:space-between;
-    flex-direction: row;
-    flex-wrap:wrap;
-    grid-column: span 1 / span 2;
-    background-color: #F0E68C ;
-    float:left;
-}
-.aboutcontent{
-    display: flex;
-    justify-content:space-evenly;
-    flex-direction: column;
-    align-items:center;
-
-    grid-column: span 1;
-    background-color: #FFDAB9;
-}
 @media only screen and (max-width: 673px)  {
 .content-inline {
     grid-template-columns: repeat(1,1fr);
