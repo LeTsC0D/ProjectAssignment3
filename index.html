@@ -31,9 +31,6 @@
     font-family: "Segoe UI Symbol",Verdana;
     font-size: 15px;
     color: black;
-<!--    width:100%;-->
-
-
 }
 .menu_bar li>a{
 text-decoration: none;
@@ -56,12 +53,13 @@ height:50%;
     display: flex;
     justify-content:space-between;
     flex-direction: row;
+    flex-wrap:wrap;
     height:390px;
     box-sizing: border-box;
     border:10px;
     margin-top:2%;
     display: grid;
-
+    flex: 1;
     grid-template-columns: 30% 70%;
 }
 .footerstyle{
@@ -69,24 +67,18 @@ height:50%;
     justify-content:center;
     flex-direction: row;
     background: #DB7093;
-    height:50px;
-    margin-top:1%;
 }
 .arrangecontent{
     display: flex;
-    justify-content:space-evenly;
+    justify-content:center;
     flex-direction: column;
-    height:100%;
-<!--    grid-template-row: 80% 20%;-->
 }
 .dropdown {
-<!--  position: relative;-->
-<!--  display: inline-block;-->
+
 }
 .dropbtn {
   background-color: white;
   color: black;
-<!--  padding: 16px;-->
   font-size: 16px;
   border: none;
   outline:none;
@@ -118,6 +110,12 @@ height:50%;
 }
 }
 
+@media screen and (max-width: 500px) {
+.content {
+    grid-template-columns: repeat(1,1fr);
+}
+}
+
 .contentinline{
     display: flex;
     justify-content:space-between;
@@ -132,6 +130,7 @@ height:50%;
     justify-content:space-evenly;
     flex-direction: column;
     align-items:center;
+
     grid-column: span 1;
     background-color: #FFDAB9;
 }
